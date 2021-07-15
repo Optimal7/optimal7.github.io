@@ -1,0 +1,146 @@
+
+html {
+	background-image: url("assets/background.jpg"); /*Res is 1920 x 1281*/
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
+}
+
+h2 {
+	color: white;
+	font-family: Calibri;
+	font-size: 40px;
+	text-align: center;
+	filter: drop-shadow(5px 5px 5px rgb(0, 0, 0, 0.3));
+}
+
+p {
+	color: rgb(0, 0, 0);
+	font-family: Calibri;
+	text-align: center;
+	font-size: 16px;
+	filter: drop-shadow(5px 5px 5px rgb(0, 0, 0, 0.3));
+}
+
+/* Logo (Optimal) */
+.logo {
+	image-rendering: pixelated;
+    filter: drop-shadow(5px 5px 4px rgb(0, 0, 0, .3));
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.w-auto {
+    width: auto;
+}
+
+.object-contain {
+    object-fit: contain;
+}
+
+.h-32 {
+    height: 8rem;
+}
+
+.flex-shrink-0 {
+    flex-shrink: 0;
+}
+
+img, video {
+    max-width: 100%;
+    height: auto;
+}
+
+audio, canvas, embed, iframe, img, object, svg, video {
+	display: block; 
+}
+
+/* img {
+    border-style: solid;
+}
+This draws a box around the "Optimal" thing */
+
+* {
+	box-sizing: border-box;
+  }
+  
+  body {
+	font-family: Arial, Helvetica, sans-serif;
+  }
+  
+  /* Float four columns side by side */
+/*  .column {
+	float: left;
+	width: 25%;
+	padding: 0 10px;
+  }*/
+  
+  /* Remove extra left and right margins, due to padding in columns */
+  .row {margin: 0 -5px;}
+  
+  /* Clear floats after the columns */
+  .row:after {
+	content: "";
+	display: table;
+	clear: both;
+  }
+  
+  /* Style the counter cards */
+  .card {
+	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2); /* this adds the "card" effect */
+	padding: 8px;
+	text-align: center;
+	background-color: #f1f1f1;
+	margin: 0 auto;
+	width: 330px;
+	height: 150px;
+	margin-top: 10px;
+  }
+
+  
+  /* Responsive columns - one column layout (vertical) on small screens */
+  @media screen and (max-width: 600px) {
+	.column {
+	  width: 100%;
+	  display: block;
+	  margin-bottom: 20px;
+	}
+  }
+
+.center {
+	flex: 50%;
+}
+
+.container {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+    /*flex-direction: row; /* for row */
+    flex-direction: column; /* for column */
+  }
+
+.social {
+    display: flex;
+	align-items: center;
+	flex-direction: row;
+	justify-content: center;
+	filter: drop-shadow(5px 5px 4px rgb(0, 0, 0, .3));
+}
+
+a {
+	color: inherit;
+	text-decoration: inherit;
+}
+
+a:hover {
+	text-decoration: underline;
+}
+
+.credit {
+	bottom: 0;
+	right: 0;
+	position: fixed;
+}
